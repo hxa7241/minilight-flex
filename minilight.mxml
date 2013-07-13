@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--============================================================================
+
+   MiniLight Flex : minimal global illumination renderer
+   Copyright (c) 2007-2008, Harrison Ainsworth / HXA7241.
+
+   http://www.hxa7241.org/
+
+=============================================================================-->
+
+
+<mx:Application
+   xmlns:mx="http://www.adobe.com/2006/mxml"
+   xmlns:hxa.ui="org.hxa7241.flex.ui.*"
+   xmlns:hxa="*"
+   frameRate="16"
+   backgroundColor="0xFFFFFF"
+   modalTransparencyBlur="0"
+   viewSourceURL="http://www.hxa7241.org/minilight/minilight.html#downloads">
+   <!-- modalTransparencyBlur=0 is a crash fix -->
+
+   <!--<mx:Style source="minilight-flex.css"/>-->
+
+   <mx:Panel title="MiniLight 1.5.2 Flex"
+      defaultButton="{startButton}" width="100%" height="100%">
+
+      <mx:HBox width="100%">
+         <mx:Label text="model URL:" width="15%"/>
+         <mx:TextInput id="modelFileUrl" width="85%"
+            text="{Application.application.parameters.modelUrl}"/>
+      </mx:HBox>
+
+      <mx:HBox>
+         <mx:Button id="startButton" label="start" click="ml.start()"/>
+         <mx:Button id="stopButton"  label="stop"  click="ml.stop()"
+            enabled="false"/>
+      </mx:HBox>
+
+      <hxa.ui:Pixmap id="image" width="100%" height="76%"
+         scale="{Application.application.parameters.imageScale}"/>
+
+      <mx:ProgressBar id="progress" width="100%" mode="manual" label=""/>
+
+      <mx:HBox width="100%">
+         <mx:Button id="copyButton" label="copy to clipboard" click="ml.copy()"/>
+         <mx:Label text="http://www.hxa7241.org/"
+            width="70%" textAlign="right" enabled="false"/>
+      </mx:HBox>
+
+   </mx:Panel>
+
+   <hxa:MiniLight id="ml"/>
+
+</mx:Application>

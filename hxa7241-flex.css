@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------------------
+
+   MiniLight Flex : minimal global illumination renderer
+   Copyright (c) 2007-2008, Harrison Ainsworth / HXA7241.
+
+   http://www.hxa7241.org/
+
+------------------------------------------------------------------------------*/
+
+
+Application
+{
+   fontSize:        12;
+   horizontalAlign: center;
+   verticalAlign:   middle;
+   paddingLeft:     0;
+   paddingRight:    0;
+   paddingTop:      0;
+   paddingBottom:   0;
+   color:           rgb(96,96,91);
+   backgroundColor: white;   /* doesn't work: needs to be an attribute */
+   barColor:        rgb(128,128,122);
+   themeColor:      rgb(80,80,40);
+}
+
+Panel
+{
+   paddingLeft:     10;
+   paddingRight:    10;
+   paddingTop:      10;
+   paddingBottom:   10;
+   verticalGap:     10;
+   borderColor:     rgb(192,192,192);
+   borderAlpha:     1.0;
+   headerColors:    rgb(192,192,192), rgb(192,192,192);
+   highlightAlphas: 0.25, 0.0;
+   backgroundColor: rgb(232,232,220);
+   backgroundAlpha: 1.0;
+}
+
+Alert
+{
+   color:           rgb(80,80,40);
+   backgroundColor: rgb(200,200,180);
+   borderColor:     rgb(200,200,180);
+   headerColors:    rgb(192,192,192), rgb(192,192,192);
+   highlightAlphas: 0.25, 0.0;
+}

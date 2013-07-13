@@ -1,0 +1,14 @@
+<flex-config>
+   <compiler>
+      <theme>
+         <filename>hxa7241-flex.css</filename>
+      </theme>
+   </compiler>
+   <metadata>
+      <title>MiniLight 1.5.2 Flex</title>
+      <description>MiniLight is a minimal global illumination renderer, for multiple languages and platforms.</description>
+      <creator>Harrison Ainsworth / HXA7241</creator>
+      <date>2008-02-17</date>
+      <language>EN</language>
+   </metadata>
+</flex-config>

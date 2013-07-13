@@ -1,0 +1,71 @@
+
+
+MiniLight 1.5.2 Flex
+======================================================================
+
+
+Copyright (c) 2007-2008, Harrison Ainsworth / HXA7241.  
+http://wwww.hxa7241.org/minilight/
+
+2008-02-17
+
+
+
+
+Contents
+--------
+
+* Description
+* Installation
+* Building
+* Acknowledgements
+
+
+
+
+Description
+-----------
+
+MiniLight is a minimal global illumination renderer. See the main MiniLight
+readme for a general description.
+
+
+
+
+Installation
+------------
+
+### Requirements ###
+
+* Flash player version 9 (probably in a browser)
+
+### Guide ###
+
+* Unpack html and swf files
+* maybe put a permission file in: "C:\Documents and Settings\[user]\Application
+Data\Macromedia\Flash Player\#Security\FlashPlayerTrust\minilight.cfg"
+containing the unpack directory path.
+
+
+
+
+Building
+--------
+
+It is an ordinary simple build. There are no special requirements or
+dependencies: Everything needed is in the supplied archive (assuming the build
+environment and tools are already prepared).
+
+Run the compiler on the mxml, like:
+   mxmlc minilight.mxml
+
+
+
+
+Acknowledgements
+----------------
+
+### tools ###
+
+* Adobe Flex SDK 2.0.1  
+  http://www.adobe.com/products/flex/
